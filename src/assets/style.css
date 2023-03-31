@@ -1,0 +1,130 @@
+img {
+    width: 100%;
+    border: 0;
+    vertical-align: middle;
+}
+
+sub,
+sup {
+    vertical-align: baseline;
+    position: relative;
+    font-size: 55%;
+    line-height: 0;
+}
+
+sup {
+    top: -0.7em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+        ========================== */
+
+.cf:before,
+.cf:after {
+    display: table;
+    content: " ";
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/*for all*/
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #E6E6FA;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* Wrapper for All */
+.wrapper {
+    max-width: 1360px;
+    width: 40%;
+    margin: 0 auto;
+}
+/* Styling For H1 */
+h1 {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #000
+}
+
+/* Styling For Calculator */
+.calculator { padding-top: 5%; }
+
+.calculator .wrapper {
+    border: 4px solid #708090;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.8);
+}
+/* Styling For Display */
+.display h1 { 
+    padding: 4% 0 2%; 
+    border-bottom: 2px solid #E0FFFF;
+}
+.display .input { 
+    height: 60px; 
+    margin: 0 2%;
+}
+
+.input input[type="text"] { 
+    width: 98.8%; 
+    height: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 30px;
+    text-align: right;
+}
+
+/* Keypad Styling  */
+.keypad { 
+    margin: 3% 2%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.keypad button {
+    height: 50px;
+    margin: 0 2% 2% 0;
+    font-size: 20px;
+    font-weight: 800;
+    flex-basis: 23.5%;
+    border-radius: 25%;
+}
+.keypad button:nth-child(4n) { margin-right: 0; }
+
+.keypad button:nth-child(17n),
+.keypad button:nth-child(18n),
+.keypad button:nth-child(19n),
+.keypad button:nth-child(20n) { margin-bottom: 0; }
+
+.bg { 
+    background-color: #90EE90;
+    box-shadow: 0 0 8px rgba(255,255,255,.4);  
+}
+.bg-change { 
+    background-color: #FF7F50; 
+    color: #fff;
+    box-shadow: 0 0 8px rgba(255,255,255,.4);  
+}
